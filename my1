@@ -1,0 +1,54 @@
+if game.PlaceId == 2753915549 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Rizki Hub", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "MAIN"})
+
+OrionLib:MakeNotification({
+	Name = "Notif",
+	Content = "Sukses",
+	Image = "rbxassetid://4483345998",
+	Time = 4
+})
+
+local KeylessTab= Window:MakeTab({
+	Name = "Keyless",
+	Icon = "🔥",
+	PremiumOnly = false
+})
+
+KeylessTab:AddButton({
+	Name = "Cokka Hub",
+	Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+  	end    
+})
+
+KeylessTab:AddButton({
+	Name = "Kncrypt Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/BloxFruit.lua"))()
+  	end    
+})
+
+KeylessTab:AddButton({
+    Name = "SpeedX Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  	end    
+})
+
+local KeyTab = Window:MakeTab({
+	Name = "Key",
+	Icon = "🔑",
+	PremiumOnly = false
+})
+
+KeyTab:AddButton({
+	Name = "HoHo Hub",
+	Callback = function()
+        _G.HohoVersion = "v4"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  	end    
+})
+
+
+OrionLib:Init()
